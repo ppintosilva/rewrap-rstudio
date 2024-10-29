@@ -13,9 +13,9 @@ reflow_doc <- function(cast_from = ".") {
     stop("Cannot find the current active document in RStudio")
   if (doc == "")
     stop("Please save the current document first")
-  if (!grepl("\\.rm(d|arkdown)$", doc, ignore.case = TRUE))
-    stop("The current active document must be an R Markdown document. ",
-      "I only see \"", basename(doc), "\".")
+#  if (!grepl("\\.rm(d|arkdown)$", doc, ignore.case = TRUE))
+#    stop("The current active document must be an R Markdown document. ",
+#      "I only see \"", basename(doc), "\".")
 
   d <- readLines(doc)
   et <- d[1:grep("^---", d)[2]]
