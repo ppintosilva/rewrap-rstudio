@@ -16,7 +16,7 @@ Install the from Github with the
 
 ``` r
 ## install pkg from Github
-remotes::install_github("mkearney/reflowdoc")
+remotes::install_github("ppintosilva/rewrap-rstudio")
 ```
 
 ## Use

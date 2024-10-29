@@ -17,7 +17,7 @@ reflow_doc <- function(cast_from = ".") {
     stop("The current active document must be an R Markdown document. ",
       "I only see \"", basename(doc), "\".")
 
-  d <- tfse::readlines(doc)
+  d <- readLines(doc)
   et <- d[1:grep("^---", d)[2]]
   d <- d[-c(1:grep("^---", d)[2])]
   while (grepl("^$", d[1])) {
